@@ -1,0 +1,12 @@
+mat-toolbar{
+    display: flex;/*  Using display flex just to be able to organize components*/
+    justify-content: end; /* Placing components at the end of toolbar*/
+}
+mat-toolbar span {
+    cursor: pointer;/* Changes mouse pointer to a hand whenever it hovers SHOP*/
+    padding-right: 10px; /* Just  a little padding between "SHOP" and <cart icon> */
+}
+
+mat-icon {
+    cursor: pointer;/* Changes mouse pointer to a hand whenever it hovers cart icon*/
+}

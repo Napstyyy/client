@@ -11,7 +11,7 @@ import { RegisterComponent } from './register.component';
   ],
   imports: [
     CommonModule,
-    RegisterRoutingModule
+    RegisterRoutingModule // Se importa el routing del register
   ]
 })
 export class RegisterModule { }

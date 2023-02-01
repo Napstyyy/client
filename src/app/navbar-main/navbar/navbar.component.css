@@ -1,12 +1,12 @@
 mat-toolbar{
-    display: flex;/*  Using display flex just to be able to organize components*/
-    justify-content: end; /* Placing components at the end of toolbar*/
+    display: flex;/*se usa display flex para poder organizar los componentes*/
+    justify-content: end; /* Placing components at the end of toolbar*/ /*se colocan los componentes al final de la barra en el header*/
 }
 mat-toolbar span {
-    cursor: pointer;/* Changes mouse pointer to a hand whenever it hovers SHOP*/
-    padding-right: 10px; /* Just  a little padding between "SHOP" and <cart icon> */
+    cursor: pointer; /*se cambia la apariencia del mouse cuando se coloca encima del texto de la tienda*/
+    padding-right: 10px; /* Just  a little padding between "SHOP" and <cart icon> */ /*se crea un pequeño espacio entre los icono para que no queden pegados*/ 
 }
 
 mat-icon {
-    cursor: pointer;/* Changes mouse pointer to a hand whenever it hovers cart icon*/
+    cursor: pointer; /* se cabia la apariencia del cursor en el momento de colocorlo encima del icono del carrito*/
 }

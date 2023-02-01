@@ -4,7 +4,7 @@ import { RegisterComponent } from './register.component';
 
 const routes: Routes = [
   {
-    path:"register", component:RegisterComponent
+    path:"register", component:RegisterComponent //se crea la ruta para usar el componente del registro
   }
 ]
 
@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class RegisterRoutingModule { }
+export class RegisterRoutingModule { } //se exporta el el routing del modulo del register para poder ser usado fuera

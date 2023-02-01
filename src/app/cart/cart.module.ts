@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CartComponent } from './cart.component';
-import { CartRoutingModule } from './cart-routing.module';
+import { CartComponent } from './cart.component'; // CartComponent debidamente  importado para ser exportado en el MODULO general
+import { CartRoutingModule } from './cart-routing.module'; // Modulo de enrutamiento para rutas del carrito
 
 
-
+// Cuerpo del modulo Cart
 @NgModule({
   declarations: [
     CartComponent
@@ -14,4 +14,4 @@ import { CartRoutingModule } from './cart-routing.module';
     CartRoutingModule
   ]
 })
-export class CartModule { }
+export class CartModule { } // Exportacion del modulo cart para el modulo principal app module

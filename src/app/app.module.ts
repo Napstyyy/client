@@ -8,11 +8,12 @@ import { LoginModule } from './login/login.module';//Importacion del login modul
 import { RegisterModule } from './register/register.module';//Importacion del register modulo completo para ser compaginado junto a el modulo app
 import { CartModule } from './cart/cart.module';//Importacion del cart modulo completo para ser compaginado junto a el modulo app
 import { ShopModule } from './shop/shop.module';//Importacion del shop modulo completo para ser compaginado junto a el modulo app
+import {AdminModule} from "./admin/admin.module";
 
 //cuerpo del modulo app PRINCIPAL MODULO 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   //importaciones de todos sus componentes
   imports: [
@@ -23,7 +24,8 @@ import { ShopModule } from './shop/shop.module';//Importacion del shop modulo co
     LoginModule,
     RegisterModule,
     CartModule,
-    ShopModule
+    ShopModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

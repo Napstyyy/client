@@ -1,0 +1,14 @@
+<li class="pLi">
+    <div class="pDiv">
+        <div class="pImg">
+            <img src={{Item.image}} alt="poyo"/>
+        </div>
+        <div class="pInputs">
+            <h2>{{Item.name}}</h2>
+            <app-input-number [type]="textInputNumber[0]" [number]="Item.minimun" [id]="Item.id"></app-input-number>
+            <app-input-number [type]="textInputNumber[1]" [number]="Item.amount" [id]="Item.id"></app-input-number>
+            <app-input-number [type]="textInputNumber[2]" [number]="Item.maximun" [id]="Item.id"></app-input-number>
+        </div>
+        <button mat-raised-button (click)="sendUpdate($event)">Send Product</button>
+    </div>
+</li>

@@ -1,152 +1,156 @@
-* {
-    padding: 0;
-    margin: 0;
+*  /* Propiedades css que van a ser globales para todo el documento */
+{ 
+    padding: 0; /* quitar el padding del documento */
+    margin: 0; /* quitar el margen del documento */
 }
 
-@keyframes zoom {
-    0% { transform: scale(1);}
-    25% { transform: scale(1.2);}
-    50% { transform: scale(1);}
-    75% { transform: scale(1.1);}
-    100% { transform: scale(1);}
+@keyframes zoom /* Animacion creada para cuando se ponga el cursos sobre los botones haga una animacion de rebote infinitamente */
+{
+    0% { transform: scale(1);} /* Escala a su tamaño original */
+    25% { transform: scale(1.2);} /* Escala a su tamaño mas el 20% */
+    50% { transform: scale(1);} /* Escala a su tamaño original */
+    75% { transform: scale(1.1);} /* Escala a su tamaño mas el 10% */
+    100% { transform: scale(1);}/* Escala a su tamaño original */
 }
-body {
-    height: 100vh;
-    width: 100vw;
-    background-color: aliceblue;
-}
-
-.containerGlobal {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body /* Propiedades para todo el cuerpo del documento */
+{ 
+    height: 100vh; /* Se define el alto como el 100% del tamaño de la pantalla del dispositivo */
+    width: 100vw; /* Se define el ancho como el 100% del tamaño de la pantalla del dispositivo */
+    background-color: aliceblue; /* Se define el color que tendra el fondo del documento */
 }
 
-.background {
-    height: 100vh;
-    width: 100vw;
-    background-color: #262626;
-    opacity: 50%;
-    position: absolute;
-    z-index: -1;
+.containerGlobal /* Propiedades para el contenerdor containerGlobal */
+{
+    width: 100vw; /* Se define el ancho como el 100% del tamaño de la pantalla del dispositivo */
+    height: 100vh; /* Se define el alto como el 100% del tamaño de la pantalla del dispositivo */
+    display: flex; /* Se define el containerGlobal como un container flexible */
+    align-items: center; /* Se alinean los items en la mitad del contenedor (verticalmente) */
+    justify-content: center; /* Se alinean los items en la mitad del contenedor (horizontalmente) */
 }
 
-.containerText {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
+.background /* Propiedades para el contenedor background */
+{
+    height: 100vh; /* Se define el alto como el 100% del tamaño de la pantalla del dispositivo */
+    width: 100vw; /* Se define el ancho como el 100% del tamaño de la pantalla del dispositivo */
+    background-color: #262626; /* Se define el color que tendra el fondo del contenedor */
+    opacity: 50%; /* Se define la opacidad que tendra el fondo del contenedor */
+    position: absolute; /* Se define el contenedor con posicion absoluta para que sea fijo siempre en el fondo */
+    z-index: -1; /* Se le da esta propiedad para que se ponga por detras de todos los elementos de la pagina */
 }
 
-.containerLogo {
-    display: flex;
-    width: 40vw;
-    margin: 3vh 8vw;
-    min-width: 200px;
-    max-width: 400px;
-    position: relative;
+.containerItems /* Propiedades para el contenedor containerItems */
+{
+    display: flex; /* Se define el containerItems como un container flexible */
+    flex-wrap: wrap; /* Se le da esta propiedad para que cuando su contenido no entre en el contenedor se puedan poner verticalmente sus items */   
+    width: 100vw; /* Se define el ancho como el 100% del tamaño de la pantalla del dispositivo */
+    align-items: center; /* Se alinean los items en la mitad del contenedor (verticalmente) */
+    justify-content: center; /* Se alinean los items en la mitad del contenedor (horizontalmente) */
 }
 
-.logoAWS {
-    width: 100%;
-    height: 100%;
+.containerLogo /* Propiedades para el contenedor containerLogo */
+{
+    display: flex; /* Se define el containerLogo como un container flexible */
+    width: 40vw; /* Se define el ancho como el 40% del tamaño de la pantalla del dispositivo */
+    margin: 3vh 8vw; /* Se define el margen del contenedor*/
+    min-width: 200px; /* Se define el ancho minimo en 200px*/
+    max-width: 400px; /* Se define el ancho maximo en 400px*/
+    position: relative; /* Se define la posicion relativa para que su contenido se adapte en base al contenedorx*/
 }
 
-#Username {
-    width: 35vw;
-    min-width: 220px;
-    height: 5vh;
-    max-width: 320px;
-    max-height: 40px;
-    font-size: 1.5rem;
-    border: 0.5px solid;
-    background-color: rgba(53, 57, 62, 0.1);
-    border-radius: 8px;
+.logoAWS /* Propiedades para la imagen del Login */
+{ 
+    width: 100%; /* Se define el ancho como el 100% del tamaño del contenedor */
+    height: 100%; /* Se define el alto como el 100% del tamaño del contenedor */
 }
 
-#Password {
-    width: 35vw;
-    min-width: 220px;
-    height: 5vh;
-    max-width: 320px;
-    max-height: 40px;
-    font-size: 1.5rem;
-    border: 0.5px solid;
-    background-color: rgba(53, 57, 62, 0.1);
-    border-radius: 8px;
+#Username, #Password /* Propiedades para los inputs de username y password */
+{
+    width: 35vw; /* Se define el ancho como el 35% del tamaño de la pantalla del dispositivo */
+    min-width: 220px; /* Se define el ancho minimo de 220px */
+    height: 5vh; /* Se define el alto como el 5% del tamaño de la pantalla del dispositivo */
+    max-width: 320px; /* Se define el ancho maximo en 320px */
+    max-height: 40px; /* Se define el alto maximo en 40px*/
+    border: 0.3px solid; /* Se define el borde del input con un grosor de 0.3px */
+    background-color: rgba(53, 57, 62, 0.1); /* Se define el fondo del input en un color con mucha transparencia */
+    border-radius: 8px; /* Se redondean las puntas del input*/
 }
 
-.loginTitle {
-    font-size: 2.5rem;
-    margin-top: 4vh;
-    margin-left: auto;
-    margin-right: auto;
+
+.loginTitle /* Propiedades para el titulo del login */
+{
+    font-size: 2.5rem; /* Se le da un tamaño a la fuente de 2.5 rem */
+    margin: 4vh auto 0 auto; /* Se le da un margen superior de 4% del alto del dispositivo y margenes laterales automaticas para que se centre el titulo*/
 }
 
-.Username {
-    font-size: 1.2rem;
+.titleInput /* Propiedades para los titulos que estan sobre cada input */ 
+{
+    font-size: 1.2rem; /* Se define el tamaño de la fuente en 1.2rem */
+    color: black; /* Se le da un color negro a la fuente */
+    margin-top: 3vh; /* Se le da un margen superior del 3% del alto de la pantalla  */
+    margin-bottom: 10px; /* Se le da un margen inferior de 10px */
 }
 
-.containerText {
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    flex-flow: column wrap;
-    width: auto;
-    position: absolute;
-    min-width: 250px;
-    margin-top: 10vh;
+.containerText /* Propiedades para el formulario containerText */
+{
+    text-align: left; /* Se alinea el texto al lado izquierdo del contenedor */
+    display: flex; /* Se define el containerText como un container flexible */
+    flex-flow: column wrap; /* Se le da la propiedad para que sus items esten ubicados en una solo columna*/
+    width: auto; /* Se define el ancho automatico*/
+    position: absolute; /* Se le da una posicion absoluta a el contenedor*/
+    min-width: 250px; /* Se define el ancho minimo en 250px*/
+    margin-top: 10vh; /* Se le da un margen superior del 10% del tamaño de la pantalla*/
 }
 
-.containerText span {
-    color: black;
-    margin-top: 3vh;
-    margin-bottom: 10px;
+.containerLogin /* propiedades para el contenedor containerLogin */
+{
+    margin-top: 20px; /* Se define el margen superior en 20px */
+    display: flex; /* Se define el containerLogin como un container flexible */
+    flex-flow: column wrap; /* Se le da la propiedad para que sus items esten ubicados en una solo columna*/
+    align-items: center; /* Se alinean los items en la mitad del contenedor (verticalmente) */
+    height: 50vh; /* Se define el alto como el 50% del tamaño de la pantalla del dispositivo */
+    min-width: 300px; /* Se define el ancho minmo en 300px*/
+    max-width: 600px; /* Se define el ancho maximo en 600px*/
+    min-height: 300px; /* Se define el alto minmo en 300px*/
+    box-shadow: 0px 12px 5px 10px rgba(26, 26, 26, 0.3); /* Se define la sombra que tendra el contenedor */
+    width: 60vw; /* Se define el ancho como el 60% del tamaño de la pantalla del dispositivo */
+    background-color: rgba(255, 255, 255, 0.85); /* Se define el fondo del contenedor */
+    border-radius: 25px; /* Se redondean los bordes */
 }
 
-.containerLogin {
-    float: right;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    height: 50vh;
-    min-width: 300px;
-    max-width: 600px;
-    min-height: 300px;
-    box-shadow: 0px 12px 5px 10px rgba(26, 26, 26, 0.3);
-    width: 60vw;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 25px;
-    text-align: left;
+.containerLogin:hover /* propiedades para el contenedor containerLogin cuando se tenga el cursor encima*/
+{
+    cursor: pointer; /* Se le pone esta propiedad para que reconozca el cursor */
+    transform: scale(1.02); /* Propiedad para que se incremente el contenedor un 20% mas de su tamaño */
 }
 
-.containerLogin:hover {
-    cursor: pointer;
-    transform: scale(1.02);
+.containerText .btn /* propiedades para el boton de Sign In */
+{
+    display: flex; /* Se define el containerLogin como un container flexible */
+    justify-content: center; /* Se alinean los items en la mitad del contenedor (horizontalmente) */
+    align-items: center; /* Se alinean los items en la mitad del contenedor (verticalmente) */
+    font-size: 1.2rem; /* Se le da un tamaño a la fuente de 1.2rem */
+    width: 15vw; /* Se define el ancho como el 15% del tamaño de la pantalla del dispositivo */
+    height: 50px; /* Se define el alto en 50px */
+    color: white; /* Se define el color de la letra en blanco */
+    margin: 5vh auto 0 auto; /* Se define el margen superior en 5% del alto de la pagina y los laterales automaticos para que se centre */
+    padding: 0 20px; /* Se define el padding de los laterales en 20px*/
+    border-radius: 20px; /* Se redondean los bordes */
+    border: 0.5px solid; /* Se le da un borde con grosor de 0.5 px */
+    background-color: #262626; /* Se define el fondo del boton */
+    box-shadow: -5px 8px 5px 0.1px rgba(26, 26, 26, 0.3); /* Se define la sombra que tendra el boton*/
 }
 
-.containerText .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    width: 15vw;
-    min-width: 120px;
-    height: 50px;
-    color: white;
-    margin: 5vh auto 0 auto;
-    padding: 0 20px;
-    border-radius: 20px;
-    border: 0.5px solid;
-    background-color: #262626;
-    box-shadow: -5px 8px 5px 0.1px rgba(26, 26, 26, 0.3);
+.btn:hover  /* propiedades para el boton de Sign In al tener el cursor encima*/
+{
+    cursor: pointer; /* Se le pone esta propiedad para que reconozca el cursor */
+    animation: zoom 1s infinite; /* Se le da la animacion de zoom definida anteriormente para que tenga una animacion de rebote que dure un minuto y se repita infinitamente */
 }
 
-.btn:hover {
-    cursor: pointer;
-    animation: zoom 1s infinite;
+.Redirection /* propiedades para el texto que redirecciona al register*/
+{
+    margin: auto; /* Margen automatico para que el texto se coloque en el centro*/
+    font-size: 20px; /* se le da un tamaño a la fuente de 20px */
+    font-weight: bold; /* se le da un grosor a la fuente de tipo Bold o negrita*/
+    color: rgb(79, 7, 79); /* Se define el color del texto */
+    margin-top: 10px; /* Se define un margen superior de 10px*/
 }

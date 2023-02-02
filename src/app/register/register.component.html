@@ -1,1 +1,31 @@
-<p>register works!</p>
+<div class="containerGlobal"> <!-- CONTENEDOR GLOBAL, contendra todo el contenido de la pagina-->
+    <div class="background"></div> <!-- BACKGROUND, contendra el fondo de el register -->
+    <div class="containerItems"> <!-- CONTENEDOR ITEMS, contendra todo el contenido del register -->
+        <div class="containerLogo"> <!-- CONTENEDOR LOGO, contendra el logo que se encuentra register -->        </div>
+        <div class="containerRegister"> <!-- CONTENEDOR REGISTER, contendra todo el contenido de la tarjeta de Register -->
+            <div class="registerTitle"> SIGN UP </div> <!-- TITULO, contendra el titulo del register -->
+            <br> <!-- ESPACIO -->
+            <form class="containerText"> <!-- CONTENEDOR TEXT, contendra todo el contenido del login -->
+                <span class = "titleInput"> USERNAME </span> <!-- TITULO INPUT, contendra el titulo que va sobre los inputs -->
+                <input #username type="text" id = "Username" name="username"> <!-- USERNAME INPUT, input en el cual se ingresara el usuario -->
+
+                <span class="titleInput"> EMAIL </span>  <!-- TITULO INPUT, contendra el titulo que va sobre los inputs -->
+                <input #email type="email" id = "Email" name="email"> <!-- EMAIL INPUT, input en el cual se ingresara el email -->
+
+                <span class="titleInput"> ADRESS </span>  <!-- TITULO INPUT, contendra el titulo que va sobre los inputs -->
+                <input #adress type="text" id = "Adress" name="adress"> <!-- ADRESS INPUT, input en el cual se ingresara la direccion -->
+
+                <span class="titleInput"> PHONE NUMBER </span>  <!-- TITULO INPUT, contendra el titulo que va sobre los inputs -->
+                <input #phone type="text" id = "PhoneNumber" name="phonenumber"> <!-- PHONE INPUT, input en el cual se ingresara el numero de telefono -->
+                
+                <span class="titleInput"> PASSWORD </span>  <!-- TITULO INPUT, contendra el titulo que va sobre los inputs -->
+                <input #password type="password" id = "Password" name="password"> <!-- PASSWORD INPUT, input en el cual se ingresara la contraseña -->
+
+                <button class="btn" (click) = "register(username.value, email.value, adress.value, phone.value, password.value, $event)" > REGISTER </button> <!-- REGISTER BUTTON, boton que hara que al dar click llame la funcion Register que procesara los datos y hara el registro -->
+                <br> <!-- ESPACIO -->
+
+                <a class= "Redirection" (click) = "loginNavigate()" > SIGN IN </a> <!-- REDIRECTION TEXT, texto que redireccionara a la pagina de Login -->
+            </form>
+        </div>
+    </div>
+</div>

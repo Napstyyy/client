@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';//importacion de component para poder reconocer este componente literalmente como uno
+import { Component, OnInit } from '@angular/core';
+import { Product, ProductsService } from 'src/app/services/products.service';
 
 export interface ProductBought {
   image: string;
@@ -22,7 +23,16 @@ const TEST_PRODUCTS: ProductBought[] = [
   styleUrls: ['./cart.component.css']
 })
 
-export class CartComponent {
+export class CartComponent implements OnInit {
+
+  constructor(private productsService:ProductsService){}
+
+  ngOnInit(): void {
+    this.productsService.getProducts()
+    .subscribe((data) => this.products = data);
+  }
+
+  products: Product[] = [];
 
   displayedColumns: string[] = ['image', 'name', 'quantity', 'price', 'actions'];
   dataSource = TEST_PRODUCTS;
@@ -47,6 +57,6 @@ export class CartComponent {
   }
 
   showProducts(){
-    console.log('sis'); 
+    console.log(this.products)
   }
 }

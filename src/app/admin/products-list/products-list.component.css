@@ -1,0 +1,13 @@
+.plDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.plUl{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    list-style: none;
+    width: 90%;
+    gap: 1vh;
+}

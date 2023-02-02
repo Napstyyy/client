@@ -1,0 +1,29 @@
+ 
+ 
+ .pLi{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    gap: 2vw;
+    justify-content: center;
+ }
+
+.pDiv{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+ .pInputs{
+    height: 15vh;
+ }
+
+ .pImg{
+    height: 15vh;
+    width: 15vh;
+ }
+
+ .pImg img{
+    width: 100%;
+ }
